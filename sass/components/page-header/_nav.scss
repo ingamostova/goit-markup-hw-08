@@ -60,3 +60,11 @@
     background-color: #2196f3;
     border-radius: 2px;
 }
+
+.nav-list {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}

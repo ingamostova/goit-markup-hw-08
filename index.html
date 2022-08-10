@@ -13,6 +13,10 @@
 
 <body>
 
+  <!-- mobile 480px
+  tablet 768px
+desktop 1200px -->
+
     <!--Шапка сайту  -->
 
     <header class="head">
@@ -48,6 +52,19 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="menu-btn" type="button" data-menu-button>
+          <svg>
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        </div>
+        <div class="menu__backdrop" data-menu>
+          <button class="menu-btn--close" type="button" data-menu-button>
+            <svg>
+              <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+
         </div>
     </header>
 
@@ -56,7 +73,7 @@
 
   <main>
     <section class="section-hero section">
-      <div class="container">
+      <div class="container container-hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button data-modal-open type="button" class="hero-btn">Заказать услугу</button>
       </div>
@@ -189,7 +206,7 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list__item">
-            <img src="./images/img1.jpg" alt="photo_Игорь_Демьяненко" width="270" />
+            <img srcset="./images/team/img1.jpg 1x, ./images/team/img1@2x.jpg 2x" src="./images/team/img1.jpg" alt="photo_Игорь_Демьяненко" width="270" />
             <div class="team-container">
               <h3 class="team-list__title">Игорь Демьяненко</h3>
               <p class="team-list__position">Product Designer</p>
@@ -226,7 +243,7 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img src="./images/img2.jpg" alt="photo_Ольга_Репина" width="270" />
+            <img srcset="./images/team/img2.jpg 1x, ./images/team/img2@2x.jpg 2x" src="./images/team/img2.jpg" alt="photo_Ольга_Репина" width="270" />
             <div class="team-container">
               <h3 class="team-list__title">Ольга Репина</h3>
               <p class="team-list__position">Frontend Developer</p>
@@ -263,7 +280,7 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img src="./images/img3.jpg" alt="photo_Николай_Тарасов" width="270" />
+            <img srcset="./images/team/img3.jpg 1x, ./images/team/img3@2x.jpg 2x" src="./images/team/img3.jpg" alt="photo_Николай_Тарасов" width="270" />
             <div class="team-container">
               <h3 class="team-list__title">Николай Тарасов</h3>
               <p class="team-list__position">Marketing</p>
@@ -300,7 +317,7 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img src="./images/img4.jpg" alt="photo_Михаил_Ермаков" width="270" />
+            <img srcset="./images/team/img4.jpg 1x, ./images/team/img4@2x.jpg 2x" src="./images/team/img4.jpg" alt="photo_Михаил_Ермаков" width="270" />
             <div class="team-container">
               <h3 class="team-list__title">Михаил Ермаков</h3>
               <p class="team-list__position">UI Designer</p>
@@ -395,7 +412,8 @@
   <!-- Підвал сайту -->
   <footer class="footer">
     <div class="container footer-container">
-      <div class="address-container">
+      <div class="footer-top">
+        <div class="address-container">
         <a href="./index.html" class="logo--secondary"><span class="logo-header">Web</span>Studio</a>
         <address class="address">
           <ul class="contacts-footer">
@@ -444,6 +462,7 @@
           </li>
         </ul>
       </div>
+      </div>
       <div class="footer-subscription">
         <p class="footer-label">Подпишитесь на рассылку</p>
         <form class="footer-form" autocomplete="off">
@@ -458,7 +477,8 @@
       </div>
     </div>
   </footer>
-  <script src="./modal.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

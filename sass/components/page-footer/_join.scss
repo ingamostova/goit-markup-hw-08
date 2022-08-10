@@ -10,6 +10,7 @@
 
 .join-list {
     display: flex;
+    justify-content: center;
 
     &__item:not(:last-child) {
             margin-right: 10px;
@@ -37,4 +38,13 @@
     width: 20px;
     height: 20px;
     fill: $hero-color;
+}
+
+.join-container {
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+
 }

@@ -1,5 +1,11 @@
 .logo--primary {
     @extend %logo;
-    margin-right: 93px;
+    margin-right: 87px;
     color: $logo-color;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        font-size: 26px;
+  line-height: calc(31 / 26);
+    }
 }

@@ -1,21 +1,45 @@
 .pros-list {
-    display: flex;
+    // display: flex;
 
+    // &__item {
+    //         width: 270px;
+    //     }
     &__item {
-            width: 270px;
+            max-width: 450px;
+            @media screen and (min-width: 768px) {
+                width: 354px;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 270px;
+            }
         }
     
+        // &__item:not(:last-child) {
+        //     margin-right: 30px;
+        // }
         &__item:not(:last-child) {
-            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
         }
 }
 
 .pros-section {
-    padding-top: 94px;
+    // padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+                padding-top: 94px;
+            }
 }
 
 .pros {
-    width: 270px;
+    // width: 270px;
+    max-width: 450px;
     height: 120px;
     display: flex;
     justify-content: center;
@@ -23,6 +47,14 @@
     margin-bottom: 30px;
     background-color: #f5f4fa;
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+                width: 354px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 270px;
+            }
 
     &-icon {
             width: 70px;
@@ -36,5 +68,10 @@
             font-weight: 700;
             line-height: 1.14;
             text-transform: uppercase;
+
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
         }
 }
+
