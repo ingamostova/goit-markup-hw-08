@@ -1,0 +1,48 @@
+@import './utils/vars';
+@import './utils/modern-normalize';
+@import './utils/basic';
+@import './utils/placeholder';
+
+// Header
+
+@import './components/page-header/header-main';
+@import './components/page-header/logo';
+@import './components/page-header/nav';
+@import './components/page-header/contacts';
+@import './components/page-header/header-icons';
+
+// Main
+
+// Hero
+@import './components/main/hero/hero';
+@import './components/main/hero/backdrop';
+@import './components/main/hero/modal';
+@import './components/main/hero/hero-form';
+@import './components/main/hero/form-icon';
+@import './components/main/hero/checkbox';
+@import './components/main/hero/send-btn';
+
+// Pros
+@import './components/main/pros/pros';
+
+// Works
+@import './components/main/works/works';
+
+// Team
+@import './components/main/team/team';
+@import './components/main/team/socials';
+
+// Clients
+@import './components/main/clients/clients';
+
+// Footer
+
+@import './components/page-footer/footer-main';
+@import './components/page-footer/footer-logo';
+@import './components/page-footer/join';
+@import './components/page-footer/footer-form';
+
+// Portfolio
+
+@import './components/portfolio-main/buttons';
+@import './components/portfolio-main/card-set';

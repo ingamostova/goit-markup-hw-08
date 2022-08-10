@@ -1,0 +1,35 @@
+.modal {
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: $hero-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $hero-color;
+    cursor: pointer;
+    transition: fill $transition;
+
+    &__icon {
+            height: 100%;
+        }
+
+                &:hover,
+                &:focus {
+                    fill: $secondary-title-color;
+                }
+}

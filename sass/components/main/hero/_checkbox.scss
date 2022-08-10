@@ -1,0 +1,39 @@
+.condition-link {
+    color: $secondary-title-color;
+    text-decoration: underline;
+}
+
+.checkbox-agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    line-height: 1.7;
+
+    color: $primary-color;
+}
+
+.checkbox {
+    position: absolute;
+    appearance: none;
+
+    &:focus+.checkbox-icon {
+            border: 2px solid $logo-color;
+        }
+
+                &:checked+.checkbox-icon {
+                    background-image: url(../images/checkbox.svg);
+                    background-size: contain;
+                    border-color: $secondary-title-color;
+                }
+}
+
+.checkbox-icon {
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid $title-color;
+    border-radius: 2px;
+}

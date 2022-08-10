@@ -1,0 +1,4 @@
+.logo--secondary {
+    @extend %logo;
+    color: $hero-color;
+}

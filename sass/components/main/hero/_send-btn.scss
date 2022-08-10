@@ -1,0 +1,17 @@
+.send-btn {
+    display: block;
+    padding: 10px 55px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $secondary-title-color;
+    color: $hero-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
