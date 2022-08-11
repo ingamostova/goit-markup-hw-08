@@ -1,16 +1,25 @@
 .menu__backdrop {
-    display: none;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 48px 40px;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     z-index: 50;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
     background-color: $hero-color;
     &.is-open {
-    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: initial;
     }
+    
 }
 
 .menu-btn {
