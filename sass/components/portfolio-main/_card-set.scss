@@ -4,9 +4,25 @@
     gap: 30px;
 }
 
+.portfolio-list__item {
+    flex-basis: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px * 2) / 3);
+    }
+}
+
 .thumb {
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        height: 294px;
+    }
 }
 
 .overlay {
@@ -15,6 +31,7 @@
     top: 0;
     padding: 63px 24px;
     width: 100%;
+    height: 100%;
     font-size: 18px;
     line-height: 1.56;
 
@@ -51,6 +68,12 @@
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .portfolio-list__item:nth-child(1) & {
+            padding-bottom: 56px;
+        }
+    }
 }
 
 .portfolio-list__link {

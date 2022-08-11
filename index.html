@@ -52,18 +52,54 @@ desktop 1200px -->
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button class="menu-btn" type="button" data-menu-button>
-          <svg>
-            <use href="./images/icons.svg#icon-menu"></use>
+            <button class="menu-btn" type="button" aria-expanded="false" data-menu-button>
+          <svg class="menu-btn__icon">
+            <use class="menu-btn__icon-open" href="./images/icons.svg#icon-menu"></use>
+            <use class="menu-btn__icon-close" href="./images/icons.svg#icon-close-menu"></use>
           </svg>
         </button>
         </div>
         <div class="menu__backdrop" data-menu>
-          <button class="menu-btn--close" type="button" data-menu-button>
-            <svg>
-              <use href="./images/icons.svg#icon-close-menu"></use>
-            </svg>
-          </button>
+          
+          <nav>
+                <ul class="mobile-list">
+                    <li class="mobile-list__item">
+                        <a href="./index.html" class="mobile__link mobile__link--current">Студия</a>
+                    </li>
+                    <li class="mobile-list__item">
+                        <a href="./portfolio.html" class="mobile__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-list__item">
+                        <a href="" class="mobile__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__item">
+                    <a href="tel:+380961111111" class="mobile-contacts__link--phone">
+                         +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contactst__item">
+                    <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="">Instagram</a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="">Twitter</a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="">Facebook</a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="">LinkedIn</a>
+              </li>
+            </ul>
 
         </div>
     </header>
@@ -113,7 +149,7 @@ desktop 1200px -->
             <label class="checkbox-agree" for="checkbox">
             <input class="checkbox" type="checkbox" name="agree" id="checkbox">
             <span class="checkbox-icon"></span>
-            Соглашаюсь с рассылкой и принимаю &nbsp; <a href="" class="condition-link"> Условия договора</a></label>
+            <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю&nbsp;</span> <a href="" class="condition-link"> Условия&nbsp;договора</a></label>
 
             <button class="send-btn" type="submit">Отправить</button>
             
