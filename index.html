@@ -244,7 +244,12 @@ desktop 1200px -->
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list__item">
-            <img srcset="./images/team/img1.jpg 1x, ./images/team/img1@2x.jpg 2x" src="./images/team/img1.jpg" alt="photo_Игорь_Демьяненко" width="270" />
+            <picture>
+              <source srcset="./images/team/img1-desktop@1x.jpg 1x, ./images/team/img1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team/img1-tablet@1x.jpg 1x, ./images/team/img1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team/img1-mobile@1x.jpg 1x, ./images/team/img1-mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team/img1-mobile@1x.jpg" alt="photo_Игорь_Демьяненко">
+            </picture>
             <div class="team-container">
               <h3 class="team-list__title">Игорь Демьяненко</h3>
               <p class="team-list__position">Product Designer</p>
@@ -281,7 +286,12 @@ desktop 1200px -->
             </div>
           </li>
           <li class="team-list__item">
-            <img srcset="./images/team/img2.jpg 1x, ./images/team/img2@2x.jpg 2x" src="./images/team/img2.jpg" alt="photo_Ольга_Репина" width="270" />
+            <picture>
+              <source srcset="./images/team/img2-desktop@1x.jpg 1x, ./images/team/img2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team/img2-tablet@1x.jpg 1x, ./images/team/img2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team/img2-mobile@1x.jpg 1x, ./images/team/img2-mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team/img1-mobile@1x.jpg" alt="photo_Ольга_Репина">
+            </picture>
             <div class="team-container">
               <h3 class="team-list__title">Ольга Репина</h3>
               <p class="team-list__position">Frontend Developer</p>
@@ -318,7 +328,12 @@ desktop 1200px -->
             </div>
           </li>
           <li class="team-list__item">
-            <img srcset="./images/team/img3.jpg 1x, ./images/team/img3@2x.jpg 2x" src="./images/team/img3.jpg" alt="photo_Николай_Тарасов" width="270" />
+            <picture>
+              <source srcset="./images/team/img3-desktop@1x.jpg 1x, ./images/team/img3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team/img3-tablet@1x.jpg 1x, ./images/team/img3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team/img3-mobile@1x.jpg 1x, ./images/team/img3-mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team/img1-mobile@1x.jpg" alt="photo_Николай_Тарасов">
+            </picture>
             <div class="team-container">
               <h3 class="team-list__title">Николай Тарасов</h3>
               <p class="team-list__position">Marketing</p>
@@ -355,7 +370,12 @@ desktop 1200px -->
             </div>
           </li>
           <li class="team-list__item">
-            <img srcset="./images/team/img4.jpg 1x, ./images/team/img4@2x.jpg 2x" src="./images/team/img4.jpg" alt="photo_Михаил_Ермаков" width="270" />
+            <picture>
+              <source srcset="./images/team/img4-desktop@1x.jpg 1x, ./images/team/img4-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team/img4-tablet@1x.jpg 1x, ./images/team/img4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team/img4-mobile@1x.jpg 1x, ./images/team/img4-mobile@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/team/img1-mobile@1x.jpg" alt="photo_Михаил_Ермаков">
+            </picture>
             <div class="team-container">
               <h3 class="team-list__title">Михаил Ермаков</h3>
               <p class="team-list__position">UI Designer</p>
@@ -516,7 +536,7 @@ desktop 1200px -->
     </div>
   </footer>
   <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

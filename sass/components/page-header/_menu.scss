@@ -1,5 +1,5 @@
 .menu__backdrop {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,6 +33,12 @@
 
     @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    &.is-open {
+        position: fixed;
+        top: 10px;
+        right: 15px;
     }
 }
 
