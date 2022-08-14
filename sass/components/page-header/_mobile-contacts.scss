@@ -22,5 +22,9 @@ line-height: calc(40 / 34);
 
 color: $secondary-title-color;
 text-decoration: none;
+
+@media screen and (max-width: 400px) {
+    font-size: 27px;
+}
 }
 }

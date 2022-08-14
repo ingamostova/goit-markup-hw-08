@@ -41,10 +41,13 @@
 }
 
 .join-container {
-    margin-bottom: 60px;
     text-align: center;
     @media screen and (min-width: 1200px) {
         text-align: left;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
     }
 
 }
